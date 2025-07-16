@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="CStorm"> <!-- Author Meta Tag -->
+	<title>Form Activity Solution File</title>
+	<link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+	<a href="#main-content" id="skipLink">Skip to main content</a>
+	<header>
+		<h1>Form Activity - GIT414</h1>
+		<nav>
+			<h2 class="sr-only">Site Navigation</h2>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Shop</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div id="particleBackground"></div>
+	<main id="main-content">
+		<article>
+			<h2>Coding Semantic and Accessible Forms!</h2>
+			<p>Today we'll be focusing on coding a form that is accessible and semantic, and we'll also briefly discuss skip links for your website. Forms can be a source of frustration for users, whether they specifically need help with accessing your website or if they just prefer that your forms be easy to use and submit. Follow along as we code this in class, and please ask questions as they arise. Let's make a form!</p>
+	<form action="https://wp.zybooks.com/form-viewer.php" method="post" id="contactForm">
+		<label for="name"><span class="required" aria-hidden="true">*</span>Full Name:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="email"><span class="required" aria-hidden="true">*</span>Email:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="phone"><span class="required" aria-hidden="true">*</span>Phone Number:</label>
+		<input type="tel" id="phone" name="phone">
+
+		<fieldset>
+			
+			<legend>
+				<span class="required" aria-hidden="true">*</span>
+				Preferred Contact Method:
+			</legend>
+			<input type="radio" id="contactEmail" name="contactMethod" value="email">
+				<label for="contactEmail">Email</label>
+			<input type="radio" id="contactPhone" name="contactMethod" value="phone" checked>
+			<label for="contactPhone">				
+				Phone	
+			</label>
+		</fieldset>
+
+		<label for="state"><span class="required" aria-hidden="true">*</span>State:</label>
+		<select id="state" name="state" required>
+			<option value="">Select a state</option>
+			<option value="al">Alabama</option>
+			<option value="ak">Alaska</option>
+			<option value="ar">Arkansas</option>
+			<option value="az">Arizona</option>
+			<option value="ca">California</option>
+			<option value="co">Colorado</option>
+			<option value="ct">Connecticut</option>
+			<option value="de">Delaware</option>
+			<option value="dc">District of Columbia</option>
+			<option value="fl">Florida</option>
+			<option value="ga">Georgia</option>
+			<option value="hi">Hawaii</option>
+			<option value="id">Idaho</option>
+			<option value="il">Illinois</option>
+			<option value="in">Indiana</option>
+			<option value="ia">Iowa</option>
+			<option value="ks">Kansas</option>
+			<option value="ky">Kentucky</option>
+			<option value="la">Louisiana</option>
+			<option value="me">Maine</option>
+			<option value="md">Maryland</option>
+			<option value="ma">Massachusetts</option>
+			<option value="mi">Michigan</option>
+			<option value="mn">Minnesota</option>
+			<option value="mo">Missouri</option>
+			<option value="ms">Mississippi</option>
+			<option value="mt">Montana</option>
+			<option value="nc">North Carolina</option>
+			<option value="nd">North Dakota</option>
+			<option value="ne">Nebraska</option>
+			<option value="nh">New Hampshire</option>
+			<option value="nj">New Jersey</option>
+			<option value="nm">New Mexico</option>
+			<option value="ny">New York</option>
+			<option value="oh">Ohio</option>			
+			<option value="ok">Oklahoma</option>
+			<option value="or">Oregon</option>
+			<option value="pa">Pennsylvania</option>
+			<option value="ri">Rhode Island</option>
+			<option value="sc">South Carolina</option>
+			<option value="sd">South Dakota</option>
+			<option value="tn">Tennessee</option>
+			<option value="tx">Texas</option>
+			<option value="ut">Utah</option>
+			<option value="vt">Vermont</option>
+			<option value="va">Virginia</option>
+			<option value="wa">Washington</option>
+			<option value="wv">West Virginia</option>
+			<option value="wi">Wisconsin</option>
+			<option value="wy">Wyoming</option>
+			
+		</select>
+
+		<label for="message"><span class="required" aria-hidden="true">*</span>Message:</label>
+		<textarea id="message" name="message" required></textarea>
+
+		<input type="submit" value="Submit">
+	</form>
+		</article>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2021 - GIT414</p>
+	</footer>
+</body>
+</html>
